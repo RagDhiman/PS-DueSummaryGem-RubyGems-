@@ -1,6 +1,6 @@
 # The due module contains all classes and data to provide due-summary functionality.
 module Due
-  # The due class takes a given date and provides several period measures until or since that date.
+  # The dueText class provides all the text for the due-summary functionality.
   class DueText
     def self.minutes
       'Minutes'
