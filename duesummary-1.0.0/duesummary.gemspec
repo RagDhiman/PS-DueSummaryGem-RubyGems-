@@ -14,6 +14,6 @@ Gem::Specification.new do |s|
   #s.license =
   s.metadata = { 'source_code_uri' => 'https://github.com/RagDhiman/PS-DueSummaryGem-RubyGems-' }
   # Dependency information:
-  s.add_runtime_dependency 'colorize'
+  s.add_runtime_dependency 'colorize', '~> 0.8.1'
   s.add_runtime_dependency 'tabulate', '~> 0.1.2'
 end
