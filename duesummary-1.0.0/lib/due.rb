@@ -25,28 +25,28 @@ module Due
     def print_summary
       update_now_date_time
       calc_difference
-      puts "#{DueText.minutes} #{till_or_since}: \t #{calc_mins_till.round(2)} #{DueText.minutes_prefix} \n
-      #{DueText.hours} #{till_or_since}: \t #{calc_hours_till.round(2)} #{DueText.hours_prefix} \n
-      #{DueText.days} #{till_or_since}: \t #{calc_days_till.round(2)} #{DueText.days_prefix} \n
-      #{DueText.weeks} #{till_or_since}: \t #{calc_weeks_till.round(2)} #{DueText.weeks_prefix} \n
-      #{DueText.months} #{till_or_since}: \t #{calc_months_till.round(2)} #{DueText.months_prefix} \n
-      #{DueText.years} #{till_or_since}: \t #{calc_years_till.round(2)} #{DueText.years_prefix}"
+      puts "#{DueText.minutes} #{till_or_since}: \t #{calc_mins_till.round(2)} #{DueText.minutes_suffix} \n
+      #{DueText.hours} #{till_or_since}: \t #{calc_hours_till.round(2)} #{DueText.hours_suffix} \n
+      #{DueText.days} #{till_or_since}: \t #{calc_days_till.round(2)} #{DueText.days_suffix} \n
+      #{DueText.weeks} #{till_or_since}: \t #{calc_weeks_till.round(2)} #{DueText.weeks_suffix} \n
+      #{DueText.months} #{till_or_since}: \t #{calc_months_till.round(2)} #{DueText.months_suffix} \n
+      #{DueText.years} #{till_or_since}: \t #{calc_years_till.round(2)} #{DueText.years_suffix}"
     end
 
     # This method returns an array containing the due-summary stats.
     def summary_array
       row = []
-      column = [DueText.minutes, till_or_since, calc_mins_till.round(2), DueText.minutes_prefix]
+      column = [DueText.minutes, till_or_since, calc_mins_till.round(2), DueText.minutes_suffix]
       row << column
-      column = [DueText.hours, till_or_since, calc_hours_till.round(2), DueText.hours_prefix]
+      column = [DueText.hours, till_or_since, calc_hours_till.round(2), DueText.hours_suffix]
       row << column
-      column = [DueText.days, till_or_since, calc_days_till.round(2), DueText.days_prefix]
+      column = [DueText.days, till_or_since, calc_days_till.round(2), DueText.days_suffix]
       row << column
-      column = [DueText.weeks, till_or_since, calc_weeks_till.round(2), DueText.weeks_prefix]
+      column = [DueText.weeks, till_or_since, calc_weeks_till.round(2), DueText.weeks_suffix]
       row << column
-      column = [DueText.months, till_or_since, calc_months_till.round(2), DueText.months_prefix]
+      column = [DueText.months, till_or_since, calc_months_till.round(2), DueText.months_suffix]
       row << column
-      column = [DueText.years, till_or_since, calc_years_till.round(2), DueText.years_prefix]
+      column = [DueText.years, till_or_since, calc_years_till.round(2), DueText.years_suffix]
       row << column
     end
 
