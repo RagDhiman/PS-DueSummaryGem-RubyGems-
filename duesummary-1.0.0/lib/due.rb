@@ -21,11 +21,6 @@ module Due
       @difference = 0.0
     end
 
-    def self.summarise(the_date_time)
-      due_s = Due::Due.new(the_date_time)
-      due_s.summary_table
-    end
-
     # Uses the puts command to output all the due-summary stats as a line separated text.
     def print_summary
       update_now_date_time
