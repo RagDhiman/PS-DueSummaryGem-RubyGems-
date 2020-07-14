@@ -1,7 +1,7 @@
 
 require 'time'
 require 'tabulate'
-require_relative 'due/DueText'
+require_relative 'due/dueText'
 
 # The due module contains all classes and data to provide due-summary functionality.
 module Due
@@ -19,6 +19,11 @@ module Due
     def initialize(the_date_time)
       @date_time = Time.parse(the_date_time)
       @difference = 0.0
+    end
+
+    def self.summarise(the_date_time)
+      due_s = Due::Due.new(the_date_time)
+      due_s.summary_table
     end
 
     # Uses the puts command to output all the due-summary stats as a line separated text.
