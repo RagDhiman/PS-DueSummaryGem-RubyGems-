@@ -1,13 +1,12 @@
 
 require 'time'
 require 'tabulate'
-require_relative 'due/dueText'
+require_relative 'due_summary/due_text'
 
 # The due module contains all classes and data to provide due-summary functionality.
 module Due
   # The due class takes a given date and provides several period measures until or since that date.
-  class Due
-
+  class DueSummary
     # Date time field set via the constructor, and the date-time value the due summary stats are based around.
     attr_accessor :date_time
     # Date time field used to store the current date-time used as part of the due summary calculations.
