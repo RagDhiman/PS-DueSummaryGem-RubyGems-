@@ -1,10 +1,10 @@
 require 'minitest/autorun'
-require_relative '../lib/due'
+require_relative '../lib/due_summary'
 
 class TestDue < Minitest::Test
 
   def test_due_difference_seconds_between_dates
-    due = Due::Due.new('2020-10-11 12:00:00')
+    due = Due::DueSummary.new('2020-10-11 12:00:00')
     due.now_date_time = Time.parse('2020-10-12 12:00:00')
     due.calc_difference
 
@@ -12,7 +12,7 @@ class TestDue < Minitest::Test
   end
 
   def test_due_difference_minutes_between_dates
-    due = Due::Due.new('2020-10-11 12:00:00')
+    due = Due::DueSummary.new('2020-10-11 12:00:00')
     due.now_date_time = Time.parse('2020-10-12 12:00:00')
     due.calc_difference
 
@@ -20,7 +20,7 @@ class TestDue < Minitest::Test
   end
 
   def test_due_difference_hours_between_dates
-    due = Due::Due.new('2020-10-11 12:00:00')
+    due = Due::DueSummary.new('2020-10-11 12:00:00')
     due.now_date_time = Time.parse('2020-10-12 12:00:00')
     due.calc_difference
 
@@ -28,7 +28,7 @@ class TestDue < Minitest::Test
   end
 
   def test_due_difference_days_between_dates
-    due = Due::Due.new('2020-10-11 12:00:00')
+    due = Due::DueSummary.new('2020-10-11 12:00:00')
     due.now_date_time = Time.parse('2020-10-12 12:00:00')
     due.calc_difference
 
@@ -36,7 +36,7 @@ class TestDue < Minitest::Test
   end
 
   def test_due_difference_days_between_dates
-    due = Due::Due.new('2020-10-11 12:00:00')
+    due = Due::DueSummary.new('2020-10-11 12:00:00')
     due.now_date_time = Time.parse('2020-10-12 12:00:00')
     due.calc_difference
 
@@ -44,7 +44,7 @@ class TestDue < Minitest::Test
   end
 
   def test_due_difference_months_between_dates
-    due = Due::Due.new('2020-07-01 00:00:00')
+    due = Due::DueSummary.new('2020-07-01 00:00:00')
     due.now_date_time = Time.parse('2020-08-01 00:00:00')
     due.calc_difference
 
@@ -52,7 +52,7 @@ class TestDue < Minitest::Test
   end
 
   def test_due_difference_years_between_dates
-    due = Due::Due.new('2019-07-01 00:00:00')
+    due = Due::DueSummary.new('2019-07-01 00:00:00')
     due.now_date_time = Time.parse('2020-07-02 00:00:00')
     due.calc_difference
 
@@ -60,7 +60,7 @@ class TestDue < Minitest::Test
   end
 
   def test_due_difference_weeks_between_dates
-    due = Due::Due.new('2020-07-01 00:00:00')
+    due = Due::DueSummary.new('2020-07-01 00:00:00')
     due.now_date_time = Time.parse('2020-08-01 00:00:00')
     due.calc_difference
 
