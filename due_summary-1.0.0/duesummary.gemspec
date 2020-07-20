@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   # Required attributes:
-  s.name = 'duesummary'
+  s.name = 'due_summary'
   s.version = '1.0.0'
   s.summary = 'Due summary for a given date!'
   s.authors = ['Rag Dhiman']
