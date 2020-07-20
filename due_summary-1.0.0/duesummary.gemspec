@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   # Required attributes:
-  s.name = 'duesummary'
+  s.name = 'due_summary'
   s.version = '1.0.0'
   s.summary = 'Due summary for a given date!'
   s.authors = ['Rag Dhiman']
-  s.files = ['LICENSE', 'README.rdoc', 'Rakefile', 'duesummary.gemspec', 'lib/due.rb', 'lib/due/dueText.rb']
+  s.files = ['LICENSE', 'README.rdoc', 'Rakefile', 'duesummary.gemspec', 'lib/due_summary.rb', 'lib/due_summary/duetext.rb', 'test/testduesummary.rb']
   # Additional attributes that are recommended:
   s.description = 'Due summary for a given date including months, days and years till the date!'
   s.email = 'rubycoder@example.com'
