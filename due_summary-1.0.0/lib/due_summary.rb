@@ -1,7 +1,7 @@
 
 require 'time'
 require 'tabulate'
-require_relative 'due_summary/due_text'
+require_relative 'due_summary/duetext'
 
 # The due module contains all classes and data to provide due-summary functionality.
 module Due
