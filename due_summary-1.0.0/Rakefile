@@ -1,15 +1,19 @@
+# Bring in a special type of rake task to run tests 
 require 'rake/testtask'
+# Bring in a special type of rake task to generate rdocs 
 require 'rdoc/task'
 
-Rake::TestTask.new do |t|
-  t.libs << 'test'
-end
+# When we run rake, run our test
+task default: 'test'
 
+# Definition of our test task
+Rake::TestTask.new do |task|
+  task.pattern = 'test/test*.rb'
+ end
+
+# Definition of our rdoc generate task
 RDoc::Task.new do |rdoc|
   rdoc.main = "README.rdoc"
   rdoc.rdoc_files.include("README.rdoc", "lib/*")
   rdoc.rdoc_dir = 'doc'
 end
-
-desc 'Run tests'
-task 'default' => :test
