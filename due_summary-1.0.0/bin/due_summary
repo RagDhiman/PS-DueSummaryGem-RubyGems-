@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'due_summary'
+due = Due::DueSummary.new(ARGV[0])
+due.summary_table

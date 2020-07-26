@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'colorize', '~> 0.8.1'
   s.add_runtime_dependency 'minitest', '~> 5.14.1'
   s.add_runtime_dependency 'tabulate', '~> 0.1.2'
-  s.executables << 'duesummary'
+  s.executables << 'due_summary'
 end
