@@ -1,9 +1,10 @@
 # Gem specification file for duesummary gem
+require_relative 'lib/due_summary/version'
 
 Gem::Specification.new do |s|
   # Required attributes:
   s.name = 'due_summary'
-  s.version = '1.0.0'
+  s.version = Due::VERSION
   s.summary = 'Due summary for a given date!'
   s.authors = ['Rag Dhiman']
   s.files = ['LICENSE', 'README.rdoc', 'Rakefile', 'due_summary.gemspec', 'lib/due_summary.rb', 'lib/due_summary/duetext.rb', 'test/testduesummary.rb']

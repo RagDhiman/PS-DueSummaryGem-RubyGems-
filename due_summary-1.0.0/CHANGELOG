@@ -1,0 +1,6 @@
+Version 1.0.1: The initial due summary is released.
+Version 1.0.2: Moved text to duetext.rb to allow for screen text translation.
+Version 1.1.0: Added new method to print due summary as a list in addition to table.
+Version 2.0.0: Change sort order of measures, and return nil of date is not valid.
+Version 2.1.0: New methods to sort and color the measures in different colors
+Version 2.1.1: Fixed a bug in the print summary implementation.
