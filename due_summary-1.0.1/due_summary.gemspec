@@ -13,7 +13,15 @@ Gem::Specification.new do |s|
   s.email = 'rubycoder@example.com'
   s.homepage = 'https://rubygems.org/gems/example'
   s.licenses = ['MIT']
-  s.metadata = { 'source_code_uri' => 'https://github.com/RagDhiman/PS-DueSummaryGem-RubyGems-' }
+  s.metadata = { 
+    'source_code_uri' => 'https://github.com/RagDhiman/PS-DueSummaryGem-RubyGems-',
+    "bug_tracker_uri"   => "https://github.com/RagDhiman/PS-DueSummaryGem-RubyGems-/issues",
+    "changelog_uri"     => "https://github.com/RagDhiman/PS-DueSummaryGem-RubyGems-/branches/all",
+    "documentation_uri" => "https://github.com/RagDhiman/PS-DueSummaryGem-RubyGems-/tree/master",
+    "homepage_uri"      => "https://www.pluralsight.com/authors/rag-dhiman",
+    "mailing_list_uri"  => "https://www.pluralsight.com/authors/rag-dhiman",
+    "wiki_uri"          => "https://github.com/RagDhiman/PS-DueSummaryGem-RubyGems-/wiki"
+  }
   # Dependency information:
   s.add_runtime_dependency 'colorize', '~> 0.8.1'
   s.add_development_dependency 'minitest', '~> 5.14.1'
